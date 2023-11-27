@@ -1,4 +1,5 @@
-body{
-    background-image: url(img/juassic\ park\ hp.png);
+.background{
+    background-image: url(background.png);
     background-repeat: no-repeat;
+    position: absolute;
 }
