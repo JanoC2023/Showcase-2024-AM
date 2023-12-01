@@ -164,6 +164,8 @@ img{
   height: 250px;
 }
 
-
+.flexbox {
+  flex-direction: row-reverse;
+}
 
 
