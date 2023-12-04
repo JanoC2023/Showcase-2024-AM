@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DinoThreads</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-body{
-
-    color: white;
-    
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    font-size: 24px
-}
-
-    </style> 
+    <title>Faux-Cart Demo</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/faux-cart.js"></script>
 </head>
+
 <body>
-   
-    <h1>DinoThreads</h1>
-    <p> Welcome to DinoThreads! Where the wonders of the past come to life
-        in the form of epic gear and collectibles! Step into a world where prehistoric majesty meets contemporary style, and where every item tells a tale as ancient as time.</p>
-     <div style="width: 100%; height: 100%; background: #D6D2C4"></div>
-     <div class="flexbox">
+    <nav>
+        <a href="index.html">Demo</a>
+        <a href="cart.html">Cart<span id="cartItemCount"></span></a>
+        <a href="https://github.com/HerrSchnell/faux-cart" target="_blank">GitHub</a>
+    </nav>
 
-        <h2>Mens</h2>
-        <div class="Mens">
-            <a href="product.html">
-            <img src="img/img/mens img/bomber.png" alt="Mens Bomber Jacket">
-            <img src="img/img/mens img/logo sweater.webp" alt="Mens Logo Sweater">
-            <img src="img/img/mens img/red.png">
-            </a> 
-        </div>
+    <main>
+        <header>
+            <h1>Faux Cart Demo</h1>
+            <p>Faux Cart is a JavaScript project designed to emulate shopping cart behavior on static websites. It uses
+                local storage to emulate server side functionality.</p>
+        </header>
+        <h2>Products</h2>
+        <div id="products">
 
-        <h2>Womens</h2>
-        <div class=" Women">
-            <a href="product.html">
-            <img src="img/img/Womens img/womens pjs.png">
-            <img src="img/img/Womens img/black.png">
-            <img src="img/img/Womens img/women yellow.jpg">
-            <img src="img/img/Womens img/women white tank top.jpg"> 
-            </a>
-        </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 01</h3>
+                <p class="prodDesc">All about product 01</p>
+                <span class="prodPrice">1.25</span><a href="" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 02</h3>
+                <p class="prodDesc">All about product 02</p>
+                <span class="prodPrice">2.00</span><a href="" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 03</h3>
+                <p class="prodDesc">All about product 03</p>
+                <span class="prodPrice">3.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 04</h3>
+                <p class="prodDesc">All about product 04</p>
+                <span class="prodPrice">4.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 05</h3>
+                <p class="prodDesc">All about product 05</p>
+                <span class="prodPrice">5.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 06</h3>
+                <p class="prodDesc">All about product 06</p>
+                <span class="prodPrice">6.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 07</h3>
+                <p class="prodDesc">All about product 07</p>
+                <span class="prodPrice">7.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 08</h3>
+                <p class="prodDesc">All about product 08</p>
+                <span class="prodPrice">8.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/seed/picsum/500" alt="Demo Image" class="prodImage">
+                <h3 class="prodName">Product 09</h3>
+                <p class="prodDesc">All about product 09</p>
+                <span class="prodPrice">9.00</span><a href="#" class="addToCart prodBtn">Add to Cart</a>
+            </div>
 
-        <h2>Kids</h2>
-        <div class="Kids">
-            <a href="product.html">
-            <img src="img/img/kids img/w-g long sleeve kids.png">
-            <img src="img/img/kids img/Screenshot 2023-11-07 103312.png">
-            <img src="img/img/kids img/red dino kid tee.png">
-            </a>
         </div>
+    </main>
+    <footer>
+        <p>&copy;2023 Jared Fast</p>
+    </footer>
 
-        <h2>Extra</h2>
-        <div class="Extra">
-            <a href="product.html">
-            <img src= "img/img/accessories/case.jpg">
-            <img src= "img/img/accessories/backpack.png">
-            <img src= "img/img/accessories/glasses.png">
-            <img src= "img/img/accessories/beanie.png">
-            <img src= "img/img/accessories/hat.png">
-            </a>
-        </div>
-     </div>
-     <footer>
-        <a href="about.html">
-            <button class="button3" >
-                About us
-            </button>
-        </a>
-     </footer>
 </body>
+
 </html>
