@@ -35,8 +35,8 @@ body {
 }
 
 .prodImage {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
