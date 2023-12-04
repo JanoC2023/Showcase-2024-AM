@@ -6,7 +6,10 @@
 
 body {
     font-family: sans-serif;
-    background-color: rgb(240, 240, 240);
+    background-image: url(img/img/background/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -161,4 +164,17 @@ nav>a:hover {
 
 #cartItemCount::after {
     content: ")";
+}
+
+@media only screen and (max-width: 640px) {
+    #products {
+        padding: 1em;
+        grid-template-columns: 1fr;
+        
+    }
+
+    header{
+        padding: 1em;
+    }
+
 }
