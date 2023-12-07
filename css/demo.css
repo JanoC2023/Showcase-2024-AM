@@ -34,7 +34,7 @@ body {
 
 .product:hover,
 .cartItem:hover {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 30px rgb(0, 0, 0);
 }
 
 .prodImage {
@@ -70,6 +70,8 @@ body {
     background-color: black;
     color: rgb(255, 0, 0);
 }
+
+
 
 .removeBtn,
 #emptyCart {
@@ -188,3 +190,7 @@ nav>a:hover {
     }
 
 }
+header, h2 {
+    text-align: center;
+}
+
