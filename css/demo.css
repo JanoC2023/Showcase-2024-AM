@@ -51,11 +51,11 @@ body {
 .prodPrice {
     display: inline-block;
     margin-top: 0.5em;
+    
 }
 
-.prodBtn,
-.removeBtn,
-#emptyCart {
+
+#continueCheck {
     display: block;
     float: right;
     background-color: rgb(141, 21, 21);
@@ -73,11 +73,11 @@ body {
 
 
 
-.removeBtn,
-#emptyCart {
+
+#continueCheck {
     background-color: black;
 }
-.removeBtn:hover,
+
 #emptyCart:hover {
     background-color: red;
 }
@@ -170,13 +170,6 @@ nav>a:hover {
     content: ")";
 }
 
-@media only screen and (max-width:640px){
-    #products {
-        grid-template-columns: 1fr;
-        padding: 1em;
-    }
-}
-
 
 @media only screen and (max-width: 640px) {
     #products {
@@ -193,4 +186,10 @@ nav>a:hover {
 header, h2 {
     text-align: center;
 }
+
+p, .prodPrice {
+    font-weight: 120e;
+}
+
+
 

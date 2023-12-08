@@ -116,7 +116,7 @@ function updateCart() {
                 <div class="cartItemPricing">
                     <p>Price: $${item.price.toFixed(2)}</p>
                     <p>Quantity: ${item.qty}</p>
-                    <p>Subtotal: $${(item.price * item.qty).toFixed(2)}</p>
+                    <p>Subtotal: $${(item.price * item.qty * 1.12).toFixed(2)}</p>
                     <a id="${index}" href="#" class="removeBtn">Remove</a>
                 </div>
             </div>
@@ -128,7 +128,7 @@ function updateCart() {
     cart.innerHTML += `
     <div class="cartTotal">
         <h3>Total: $${total.toFixed(2)}</h3>
-        <a href="#" id="emptyCart">Empty Cart</a>
+        <a href="checkout.html" id="continueCheck">Continue to Checkout</a>
     </div>
     `;
     // add event listeners to buttons
