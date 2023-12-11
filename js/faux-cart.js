@@ -116,7 +116,7 @@ function updateCart() {
                 <div class="cartItemPricing">
                     <p>Price: $${item.price.toFixed(2)}</p>
                     <p>Quantity: ${item.qty}</p>
-                    <p>Subtotal: $${(item.price * item.qty * 1.12).toFixed(2)}</p>
+                    <p>Subtotal: $${(item.price * item.qty).toFixed(2)}</p>
                     <a id="${index}" href="#" class="removeBtn">Remove</a>
                 </div>
             </div>
