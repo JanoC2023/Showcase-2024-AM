@@ -53,8 +53,8 @@ body {
     margin-top: 0.5em;
     
 }
-
-
+.removeBtn,
+.prodBtn,
 #continueCheck {
     display: block;
     float: right;
@@ -64,6 +64,9 @@ body {
     text-decoration: none;
     border-radius: 0.5em;
     transition: background-color 500ms ease;    
+}
+.removeBtn {
+    background-color: rgb(255, 0, 0);
 }
 
 .prodBtn:hover {
